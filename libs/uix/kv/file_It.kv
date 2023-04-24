@@ -1,0 +1,13 @@
+<fileapp>
+    name: "appit"
+
+    GridLayout:
+        rows: 2
+        MDTextField:
+            id: mk_folder
+            hint_text: "How many folders to make"
+
+        MDFlatButton:
+            text: "Done"
+            on_release:
+                root.change_screen()

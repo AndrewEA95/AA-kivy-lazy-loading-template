@@ -1,0 +1,13 @@
+<pickfile>:
+    name: "view"
+    BoxLayout:
+        orientation: 'vertical'
+        ModalView:
+            id: filechooser_popup
+            size_hint: 0.8, 0.8
+            auto_dismiss: False
+            FileChooserListView:
+                id: filechooser
+                rootpath: '/Users/andrewanglin/Documents/pdf_files/testF'
+                filters: ['*.txt', '*.pdf']
+                on_selection: root.file_selected(self.selection)

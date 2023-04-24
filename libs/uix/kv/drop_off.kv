@@ -1,0 +1,21 @@
+<dropOff>:
+    name: "dropO"
+    BoxLayout:
+        orientation: 'horizontal'
+        # Button:
+        #     text: 'Select a file'
+        #     on_release: root.show_filechooser()
+        
+        ModalView:
+            id: filechooser_popup
+            size_hint: 0.8, 0.8
+            auto_dismiss: False
+            FileChooserListView:
+                id: filechooser
+                rootpath: '/'
+                filters: ['*.txt', '*.pdf']
+                on_selection: root.file_selected(self.selection)
+        
+        Button:
+            text: 'done'
+            on_release: root.change_screen()

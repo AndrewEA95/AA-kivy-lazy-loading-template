@@ -1,12 +1,22 @@
 {
-    "home": {
-        "import": "from libs.uix.baseclass.home_screen import HomeScreen",
-        "object": "HomeScreen()",
-        "kv": "libs/uix/kv/home_screen.kv"
+    "appit": {
+        "import": "from libs.uix.baseclass.file_It import fileapp",
+        "object": "fileapp()",
+        "kv": "libs/uix/kv/file_It.kv"
     },
-    "settings": {
-        "import": "from libs.uix.baseclass.settings_screen import SettingsScreen",
-        "object": "SettingsScreen()",
-        "kv": "libs/uix/kv/settings_screen.kv"
+    "makeAFile": {
+        "import": "from libs.uix.baseclass.mk_file import mk_file",
+        "object": "mk_file()",
+        "kv": "libs/uix/kv/mk_file.kv"
+    },
+    "dropO": {
+        "import": "from libs.uix.baseclass.drop_off import dropOff",
+        "object": "dropOff()",
+        "kv": "libs/uix/kv/drop_off.kv"
+    },
+    "pickF": {
+        "import": "from libs.uix.baseclass.choose_file import pickfile",
+        "object": "pickfile()",
+        "kv": "libs/uix/kv/choose_file.kv"
     }
 }

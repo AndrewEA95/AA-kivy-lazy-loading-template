@@ -1,0 +1,30 @@
+<mk_file>:
+    name: "makeAFile"
+    
+    MDGridLayout:
+        cols: 2
+        MDLabel:
+            text: "folder name"
+        
+        MDTextField:
+            id: folder
+            multiline: False
+        
+        MDLabel:
+            text: "doc type:"
+        
+        MDTextField:
+            id: file_type
+            multiline: False
+        
+        MDLabel:
+            text: "Keywords (separated by comma):"
+    
+        MDTextField:
+            id: keywords
+            multiline: False
+
+        MDFlatButton:
+            text: "Done"
+            on_press:
+                root.change_screen()

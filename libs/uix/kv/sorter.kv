@@ -1,0 +1,39 @@
+<FileSorterGUI>
+    name: "makeA"
+    
+    MDGridLayout:
+        cols: 2
+        MDLabel:
+            text: "Path to files"
+        
+        MDTextField:
+            id: files_path
+            text: "/users/andrewanglin/Downloads/"
+            multiline: False
+        
+        MDLabel:
+            text: "Output directory:"
+        
+        MDTextField:
+            id: output_dir
+            text: '/users/andrewanglin/documents/pdf_files'
+            multiline: False
+        
+        MDLabel:
+            text: "File types (separated by comma):"
+        
+        MDTextField:
+            id: file_types
+            multiline: False
+        
+        MDLabel:
+            text: "Keywords (separated by comma):"
+    
+        MDTextField:
+            id: keywords
+            multiline: False
+
+        MDFlatButton:
+            text: "Sort Files"
+            on_press:
+                root.sort_files()
